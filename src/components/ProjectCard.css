@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+.project-container{
+  width: 100%;
+  border-style: solid;
+  border-color: ghostwhite;
+  background-color: black;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  color: ghostwhite;
+  font-family: Lucida Console, Courier New, monospace;
+}
+p{
+  color: ghostwhite;
+  font-family: Lucida Console, Courier New, monospace;
+}
+button{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-family: Lucida Console, Courier New, monospace;
+  color: ghostwhite;
+  background-color: transparent;
+  border-style: solid;
+  border-color: ghostwhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
