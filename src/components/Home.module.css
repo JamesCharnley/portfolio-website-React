@@ -6,10 +6,10 @@ body {
     height: 100vh;
     margin: 0px;
 }
-.no-margin{
+.no_margin{
   margin: 0;
 }
-.container{
+.home_container{
   background-color: #1a1919;
   width: 100vw;
   
@@ -19,7 +19,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.text-center{
+.text_center{
   text-align: center;
 
   
@@ -34,37 +34,31 @@ nav ul li a {
 
 @media screen and (min-width: 700px) {
     
-    h1{
+    h1.main_title{
       font-size: 50px;
     }
-    h2{
+    h2.secondary_title{
       font-size: 40px;
-    }
-    img.profile-picture {
-      width: 300px;
     }
 }
 @media screen and (max-width: 700px) {
     
-    h1{
+    h1.main_title{
       font-size: 30px;
     }
-    h2{
+    h2.secondary_title{
       font-size: 25px;
-    }
-    img.profile-picture {
-      width: 225px;
     }
 }
 
-h1{
+h1.main_title{
   font-family: Lucida Console, Courier New, monospace;
   padding: 10px;
   opacity: 0;
   animation: fade 4s forwards;
   animation-delay: 1s;
 }
-h2{
+h2.secondary_title{
   
   font-family: Lucida Console, Courier New, monospace;
   padding: 10px;
@@ -73,19 +67,12 @@ h2{
   animation-delay: 1s;
 }
 
-img.profile-picture {
-  opacity: 0;
-  animation: fade 4s forwards;
-  animation-delay: 1s;
-}
-
-
-.transform-center-vertical{
+.transform_center_vertical{
   top: 50%;
   transform: translateY(15%);
 }
 
-.text-ghost-white{
+.text_ghost_white{
   color: ghostwhite;
 }
 

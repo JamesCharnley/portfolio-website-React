@@ -1,25 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cascadia-code');
 
-.project-container{
+.project_container{
   width: 100%;
-  border-style: solid;
-  border-color: ghostwhite;
-  background-color: black;
-}
+  height: 100%;
 
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4%;
+   box-shadow: 2px 2px 3px black;
+}
+.project_container:hover{
+   box-shadow: 4px 4px 5px black;
+}
+.text_container{
+  padding-bottom: 15px;
+}
+a{
+  text-decoration: none;
+}
 img{
   width: 100%;
   height: auto;
+  border-radius: 3%;
 }
 
-h1{
+h1.project_title{
   color: ghostwhite;
   font-family: Lucida Console, Courier New, monospace;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 p{
   color: ghostwhite;
   font-family: Lucida Console, Courier New, monospace;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 button{
   width: 150px;
@@ -30,6 +54,6 @@ button{
   background-color: transparent;
   border-style: solid;
   border-color: ghostwhite;
-  margin-top: 10px;
+  margin-top: auto;
   margin-bottom: 10px;
 }

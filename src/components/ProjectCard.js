@@ -1,20 +1,21 @@
-import './ProjectCard.css';
+import projectStyles from './ProjectCard.module.css';
 
 export default function ProjectCard({id, imageUrl, title, description, skills}){
   const projectId= id;
   return (
-    <div className="project-container">
+    <a href="/">
+    <div className={projectStyles.project_container}>
       <img src={imageUrl} alt="Avatar" />
-      <h1>{title}</h1>
-      <p style={{ padding: "20px", fontSize: "18px" }}>
+      <div className={projectStyles.text_container}>
+      <h1 className={projectStyles.project_title}>{title}</h1>
+      <p>
         <strong>Description:</strong> {description}
       </p>
-      <p style={{ padding: "20px", fontSize: "18px" }}>
+      <p>
         <strong>Skills:</strong> {skills}
       </p>
-      <div className="button-container">
-        <button>View</button>
       </div>
     </div>
+    </a>
   );
 }
