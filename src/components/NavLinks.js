@@ -1,8 +1,8 @@
-import './NavLinks.css';
+import navLinksStyles from './NavLinks.module.css';
 
 export default function NavLinks({ links, color }) {
   return (
-    <nav className='nav-links'>
+    <nav className={navLinksStyles.nav_links}>
       <ul>
         {links.map((l) => (
           <li key={l.href}>

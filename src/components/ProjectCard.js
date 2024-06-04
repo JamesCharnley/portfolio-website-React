@@ -5,7 +5,8 @@ export default function ProjectCard({id, imageUrl, title, description, skills}){
   return (
     <a href="/">
     <div className={projectStyles.project_container}>
-      <img src={imageUrl} alt="Avatar" />
+      {/*<img src={imageUrl} alt="Avatar" />*/}
+      <div style={{backgroundImage: "url(" + imageUrl +")"}} className={projectStyles.image}></div>
       <div className={projectStyles.text_container}>
       <h1 className={projectStyles.project_title}>{title}</h1>
       <p>
