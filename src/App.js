@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./components/Home";
 import Projects from './components/Projects';
+import { Project } from "./components/Project";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/project/:id" element={<Project />}></Route>
       </Routes>
     </BrowserRouter>
   );

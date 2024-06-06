@@ -3,7 +3,7 @@ import projectStyles from './ProjectCard.module.css';
 export default function ProjectCard({id, imageUrl, title, description, skills}){
   const projectId= id;
   return (
-    <a href="/">
+    <a href={`/project/${projectId}`}>
     <div className={projectStyles.project_container}>
       {/*<img src={imageUrl} alt="Avatar" />*/}
       <div style={{backgroundImage: "url(" + imageUrl +")"}} className={projectStyles.image}></div>
